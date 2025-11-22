@@ -1,0 +1,49 @@
+// ================================================
+// 1) FONT AWESOME (USANDO @use, Sass moderno)
+// ================================================
+
+// Sobrescribimos la variable $font-path para que apunte a node_modules
+@use "../../../node_modules/@fortawesome/fontawesome-free/scss/_variables" as v with (
+  $font-path: "../../../node_modules/@fortawesome/fontawesome-free/webfonts"
+);
+
+// Importamos los módulos de Font Awesome
+@use "../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome" as *;
+@use "../../../node_modules/@fortawesome/fontawesome-free/scss/solid" as *;
+@use "../../../node_modules/@fortawesome/fontawesome-free/scss/brands" as *;
+// Si quieres los regulares, agrega:
+// @use "../../../node_modules/@fortawesome/fontawesome-free/scss/regular" as *;
+
+
+// ================================================
+// 2) FUENTE PROPIA: Audiowide
+// ================================================
+@font-face {
+  font-family: "Audiowide";
+  src: url("../Fuentes/Audiowide-Regular.woff2") format("woff2"),
+       url("../Fuentes/Audiowide-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+// ================================================
+// 3) VARIABLES BOOTSTRAP PERSONALIZADAS
+// ================================================
+$body-bg: #f5f5f5;
+$body-color: #333;
+$primary: #009d9a;
+$secondary: #8d9d00;
+
+$font-family-sans-serif: "Audiowide", sans-serif;
+$font-family-base: $font-family-sans-serif;
+
+$font-size-base: 1rem;
+$font-size-lg: $font-size-base * 1.25;
+$font-size-sm: $font-size-base * 0.875;
+
+
+// ================================================
+// 4) BOOTSTRAP
+// ================================================
+@import "../../../node_modules/bootstrap/scss/bootstrap";

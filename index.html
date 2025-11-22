@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pamplona Music Festival</title>
+    <link rel="icon" type="image/png" href="assets/img/iconos/favicon/apple-icon.png" />
+
+    <!-- Bootstrap -->
+    <link href="assets/css/custom-min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="assets/img/logos/logo-removebg-preview.png" alt="logo" width="90" class="me-2">
+            </a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="text-light"> <i class="fa-solid fa-bars"></i></span>
+            </button>
+
+            <div id="navMenu" class="collapse navbar-collapse">
+                <ul class="navbar-nav mx-auto gap-3">
+                    <li class="nav-item"><a class="nav-link link-secondary" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link link-secondary" href="#artistas">Artistas</a></li>
+                    <li class="nav-item"><a class="nav-link link-secondary" href="#entradas">Entradas</a></li>
+                    <li class="nav-item"><a class="nav-link link-secondary" href="#horario">Horario</a></li>
+                    <li class="nav-item"><a class="nav-link link-secondary" href="#faq">Faqs</a></li>
+                    <li class="nav-item"><a class="nav-link link-secondary" href="#consejos">Consejos</a></li>
+                </ul>
+
+                <div class="d-flex gap-2 flex-md-column flex-xl-row">
+                    <button class="btn btn-outline-secondary">Iniciar sesión</button>
+                    <button class="btn btn-outline-secondary">Usuario</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="home" class="py-5 text-center container-fluid">
+        <h2 class="text-primary"><img class="img-fluid pb-4" style="width: 350px;"
+                src="assets/img/logos/Logo(solo letras recortado).png" alt=""></h2>
+
+        <!--<img src="assets/img/resto/Imagen principal.png" alt="Imagen principal del evento"
+            class="img-fluid rounded border mx-auto"> -->
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/img/resto/Imagen principal.png" class="img-fluid w-90" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/resto/carrusel1.jpg" class="img-fluid w-90" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/resto/carrusel2.jpg" class="img-fluid w-90" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- ARTISTAS -->
+    <section id="artistas" class="container text-center py-5">
+        <h3 class="text-primary">Artistas invitados</h3>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 my-3">
+            <div class="col">
+                <div class="card p-2" data-bs-toggle="modal" data-bs-target="#aitana">
+                    <img src="assets/img/cantantes/aitana500.png" class="img-fluid" alt="">
+                    <strong class="cantante">Aitana</strong>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card p-2" data-bs-toggle="modal" data-bs-target="#badbunnyModal">
+                    <img src="assets/img/cantantes/Bad-Bunny500.png" class="img-fluid" alt="">
+                    <strong class="cantante">Bad Bunny</strong>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card p-2" data-bs-toggle="modal" data-bs-target="#becerraModal">
+                    <img src="assets/img/cantantes/mariabecerra500.jpg" class="img-fluid" alt="">
+                    <strong class="cantante">María Becerra</strong>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card p-2" data-bs-toggle="modal" data-bs-target="#brunoModal">
+                    <img src="assets/img/cantantes/brunoMars500.jpg" class="img-fluid" alt="">
+                    <strong class="cantante">Bruno Mars</strong>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card p-2" data-bs-toggle="modal" data-bs-target="#chayanneModal">
+                    <img src="assets/img/cantantes/chayanne500.jpg" class="img-fluid" alt="">
+                    <strong class="cantante">Chayanne</strong>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card p-2" data-bs-toggle="modal" data-bs-target="#rosaliaModal">
+                    <img src="assets/img/cantantes/rosalia500.jpg" class="img-fluid" alt="">
+                    <strong class="cantante">Rosalía</strong>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card p-2" data-bs-toggle="modal" data-bs-target="#bisbalModal">
+                    <img src="assets/img/cantantes/davidBisbal500.jpg" class="img-fluid" alt="">
+                    <strong class="cantante">David Bisbal</strong>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card p-2" data-bs-toggle="modal" data-bs-target="#sabrinaModal">
+                    <img src="assets/img/cantantes/sabrina500.jpg" class="img-fluid" alt="">
+                    <strong class="cantante">S. Carpenter</strong>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-secondary">Ver más</button>
+    </section>
+
+    <!-- ENTRADAS -->
+    <section id="entradas" class="container py-5">
+        <h3 class="text-center mb-4 text-primary">Entradas</h3>
+
+        <div class="row g-4">
+            <div class="col-md-5 col-lg-5">
+                <div class="card p-3 text-center">
+                    <img src="assets/img/tickets/NormalTicket.png" class="img-fluid" alt="">
+                    <h4 class="mt-4">Entrada Normal</h4>
+                    <p class="text-muted">Incluye acceso general al recinto.</p>
+                    <a class="btn btn-secondary" href="#">Comprar</a>
+                </div>
+            </div>
+
+            <div class="col-md-5 offset-md-2 col-lg-5 offset-lg-2">
+                <div class="card p-3 text-center">
+                    <img src="assets/img/tickets/GoldenTicket(modificado).png" class="img-fluid" alt="">
+                    <h4 class="mt-4">Entrada Premium</h4>
+                    <p class="text-muted mt-1">Acceso VIP y acceso anticipado.</p>
+                    <a class="btn btn-secondary" href="#">Comprar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- HORARIO -->
+    <section id="horario" class="container py-5">
+        <h3 class="text-center mb-4 text-primary">Horario</h3>
+
+        <div class="card p-4 bg-secondary bg-opacity-10">
+            <div class="table-responsive">
+                <table class="table table-bordered text-center table-hover mb-0 ">
+                    <thead class="table-secondary table-hover">
+                        <tr>
+                            <th>Día 1</th>
+                            <th>Día 2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <strong class="text-secondary">12:00</strong><br>Aitana
+                            </td>
+                            <td>
+                                <strong class="text-secondary">13:00</strong><br>Bad Bunny
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong class="text-secondary">14:00</strong><br>María Becerra
+                            </td>
+                            <td>
+                                <strong class="text-secondary">15:00</strong><br>Bruno Mars
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong class="text-secondary">16:30</strong><br>Chayanne
+                            </td>
+                            <td>
+                                <strong class="text-secondary">18:00</strong><br>Rosalía
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong class="text-secondary">16:30</strong><br>David Bisbal
+                            </td>
+                            <td>
+                                <strong class="text-secondary">18:00</strong><br>S. Carpenter
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FAQ -->
+    <section id="faq" class="container py-5">
+        <h3 class="text-center mb-4 text-primary">Preguntas frecuentes</h3>
+
+        <div class="mb-3">
+            <h5 class="text-secondary">¿Cuándo y dónde se celebra el Pamplona Music Festival?</h5>
+            <p class="text-light">El festival se celebra en Pamplona durante el verano, en un recinto al aire libre con
+                varios escenarios y zonas temáticas. Las fechas exactas se anuncian en nuestras redes oficiales.</p>
+        </div>
+
+        <div class="mb-3">
+            <h5 class="text-secondary">¿Cuál es la diferencia entre la entrada General y la VIP?</h5>
+            <p class="text-light">La entrada General da acceso a todas las zonas comunes y escenarios principales,
+                mientras que la entrada VIP incluye áreas exclusivas, mejores vistas del escenario, zonas privadas y
+                servicios premium.</p>
+        </div>
+        <div class="mb-3">
+            <h5 class="text-secondary">¿Puedo entrar y salir del recinto durante el festival?</h5>
+            <p class="text-light">Por motivos de seguridad, las entradas solo permiten una entrada al recinto por día.
+                No se permite volver a entrar una vez que hayas salido.</p>
+        </div>
+
+        <div class="mb-3">
+            <h5 class="text-secondary">¿Hay opciones de comida, bebida y descanso dentro del festival?</h5>
+            <p class="text-light">Sí, contamos con una amplia zona gastronómica con food trucks, barras de bebidas y
+                áreas de descanso para que disfrutes entre concierto y concierto.</p>
+        </div>
+
+    </section>
+    <section>
+        <h3 id="consejos" class="text-center mb-4 text-primary">Consejos para el festival</h3>
+        <div class="text-center my-4">
+
+            <!-- Contenedor relativo para superponer icono y texto -->
+            <div class="position-relative d-inline-block" style="cursor:pointer" data-bs-toggle="modal"
+                data-bs-target="#videoModal">
+
+                <!-- Imagen de portada (tarjeta con título) -->
+                <div class="card text-bg-dark">
+                    <img src="assets/img/video/miniatura(terminada).png" class="card-img" alt="..."
+                        style="max-width: 450px;">
+                    <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                        <h5 class="card-title text-primary"><i
+                                class="fa-solid fa-circle-play fa-4x mb-2 link-primary"></i></h5>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- Modal con el video -->
+        <div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title">Consejos para el festival</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <!-- Contenedor responsive Bootstrap -->
+                        <div class="ratio ratio-16x9">
+                            <video id="videoReproductor" controls preload="metadata"
+                                poster="assets/img/video/miniatura(terminada).png">
+
+                                <!-- Formatos de vídeo -->
+                                <source src="assets/img/video/8 Essential Tips for EDC Las Vegas 2025.mp4"
+                                    type="video/mp4">
+                                <source src="assets/img/video/8 Essential Tips for EDC Las Vegas 2025.webm"
+                                    type="video/webm">
+
+                                <!-- Subtítulos Español -->
+                                <track
+                                    src="assets/img/video/[Spanish(United States)] 8 Essential Tips for EDC Las Vegas 2025.vtt"
+                                    kind="subtitles" srclang="es" label="Español (VTT)" default>
+                                <track
+                                    src="assets/img/video/[Spanish(United States)] 8 Essential Tips for EDC Las Vegas 2025.srt"
+                                    kind="subtitles" srclang="es" label="Español (SRT)">
+
+                                <!-- Subtítulos Inglés -->
+                                <track
+                                    src="assets/img/video/[English (United States)] 8 Essential Tips for EDC Las Vegas 2025.vtt"
+                                    kind="subtitles" srclang="en" label="English (VTT)">
+                                <track
+                                    src="assets/img/video/[English (United States)] 8 Essential Tips for EDC Las Vegas 2025.srt"
+                                    kind="subtitles" srclang="en" label="English (SRT)">
+
+                                Tu navegador no soporta el elemento <code>video</code>.
+                            </video>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark mt-5 py-4">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 text-center text-md-start order-2 order-md-0">
+                    <strong class="text-light">Info legal</strong>
+                    <p class="text-muted"><a class="text-decoration-none" href="">Términos</a> · <a
+                            class="text-decoration-none" href="">Privacidad</a> · <a class="text-decoration-none"
+                            href="">Cookies</a></p>
+                </div>
+
+                <div class="col-md-4 text-center order-1 order-md-1">
+                    <strong class="text-light">Nombre del festival</strong>
+                    <div class="d-flex justify-content-center gap-2 my-2">
+                        <i class="fa-brands fa-square-facebook fa-2x link-primary"></i>
+                        <i class="fa-brands fa-square-instagram fa-2x link-primary"></i>
+                        <i class="fa-brands fa-square-x-twitter fa-2x link-primary"></i>
+                    </div>
+                </div>
+
+                <div class="col-md-4 text-center text-md-end order-3 order-md-2">
+                    <strong class="text-light">Contacto</strong>
+                    <p class="text-primary">Tel: +34 123 12 34 56<br>Navarra</p>
+                </div>
+
+            </div>
+            <!--Creative Commons-->
+            <div class="text-center py-3 text-light">
+                <p class="mb-1">
+                    <a href="https://pamplonamusicfestival.com" class="text-decoration-none">Pamplona Music Festival</a>
+                    ©
+                    2025 by
+                    <a href="https://github.com/Alcalnik" class="text-decoration-none">Alcalde Díaz Nicolás Emanuel</a>
+                </p>
+                <p class="mb-0">
+                    is licensed under
+                    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" class="text-decoration-none">CC
+                        BY-NC-ND
+                        4.0</a>
+                    <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="CC" class="ms-1"
+                        style="max-width: 1em; max-height: 1em;">
+                    <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="BY" class="ms-1"
+                        style="max-width: 1em; max-height: 1em;">
+                    <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="NC" class="ms-1"
+                        style="max-width: 1em; max-height: 1em;">
+                    <img src="https://mirrors.creativecommons.org/presskit/icons/nd.svg" alt="ND" class="ms-1"
+                        style="max-width: 1em; max-height: 1em;">
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!--Modales-->
+
+    <!-- Aitana -->
+    <div class="modal fade" id="aitana" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content p-3">
+                <img src="assets/img/cantantes/aitanac.jpeg" class="img-fluid rounded mb-3" alt="">
+                <div class="text-center">
+                    <h3>Aitana</h3>
+                    <p>Cantante y compositora española que se dio a conocer tras participar en un talent show
+                        televisivo. Ha logrado reconocimiento internacional gracias a su pop moderno y colaboraciones
+                        con artistas de distintos géneros.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bad Bunny -->
+    <div class="modal fade" id="badbunnyModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content p-3">
+                <img src="assets/img/cantantes/Bad-Bunnyc.avif" class="img-fluid rounded mb-3" alt="">
+                <div class="text-center">
+                    <h3>Bad Bunny</h3>
+                    <p>Cantante y compositor puertorriqueño, referente del trap latino y reguetón. Se ha destacado por
+                        su estilo particular, su impacto cultural y su constante experimentación musical.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- María Becerra -->
+    <div class="modal fade" id="becerraModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content p-3">
+                <img src="assets/img/cantantes/mariabecerrac.jpg" class="img-fluid rounded mb-3" alt="">
+                <div class="text-center">
+                    <h3>María Becerra</h3>
+                    <p>Cantante argentina enfocada en el pop urbano. Ha alcanzado gran popularidad en la escena latina
+                        actual gracias a su versatilidad vocal y colaboraciones con artistas de gran trayectoria.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bruno Mars -->
+    <div class="modal fade" id="brunoModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content p-3">
+                <img src="assets/img/cantantes/brunoMarsc.jpeg" class="img-fluid rounded mb-3" alt="">
+                <div class="text-center">
+                    <h3>Bruno Mars</h3>
+                    <p>Cantante, compositor y productor estadounidense reconocido mundialmente. Su estilo fusiona pop,
+                        funk, soul y R&B, logrando múltiples éxitos y premios.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chayanne -->
+    <div class="modal fade" id="chayanneModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content p-3">
+                <img src="assets/img/cantantes/chayannec.webp" class="img-fluid rounded mb-3" alt="">
+                <div class="text-center">
+                    <h3>Chayanne</h3>
+                    <p>Cantante y actor puertorriqueño con una trayectoria consolidada en la música latina. Conocido por
+                        sus baladas y temas pop que han marcado varias generaciones.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rosalía -->
+    <div class="modal fade" id="rosaliaModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content p-3">
+                <img src="assets/img/cantantes/rosaliac.jpg" class="img-fluid rounded mb-3" alt="">
+                <div class="text-center">
+                    <h3>Rosalía</h3>
+                    <p>Cantante, compositora y productora española cuya propuesta mezcla flamenco con pop, urbano y
+                        electrónica. Se ha convertido en una artista global con un estilo muy distintivo.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- David Bisbal -->
+    <div class="modal fade" id="bisbalModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content p-3">
+                <img src="assets/img/cantantes/davidBisbalc.jpg" class="img-fluid rounded mb-3" alt="">
+                <div class="text-center">
+                    <h3>David Bisbal</h3>
+                    <p>Cantante español con larga trayectoria internacional. Reconocido por su voz potente, su energía
+                        escénica y éxitos dentro del pop latino.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sabrina Carpenter -->
+    <div class="modal fade" id="sabrinaModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content p-3">
+                <img src="assets/img/cantantes/sabrinac.avif" class="img-fluid rounded mb-3" alt="">
+                <div class="text-center">
+                    <h3>Sabrina Carpenter</h3>
+                    <p>Cantante y actriz estadounidense. Su carrera musical ha crecido notablemente en los últimos años
+                        con un estilo pop moderno y presencia destacada en redes sociales.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

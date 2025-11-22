@@ -1,0 +1,32 @@
+// ================================================
+// 1) FUENTES PERSONALIZADAS
+// ================================================
+@font-face {
+  font-family: "Audiowide";
+  src: url("../webfonts/Audiowide-Regular.woff2") format("woff2"),
+       url("../webfonts/Audiowide-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+// ================================================
+// 2) VARIABLES BOOTSTRAP PERSONALIZADAS
+// ================================================
+@import "variables.scss";
+
+// ================================================
+// 3) BOOTSTRAP
+// ================================================
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+// ================================================
+// 4) TUS CLASES PERSONALIZADAS
+// ================================================
+@import "clases.scss";
+
+// ================================================
+// 5) FONT AWESOME
+// ================================================
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/solid";
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/brands";

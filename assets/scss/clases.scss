@@ -1,0 +1,14 @@
+// ================================================
+// CLASES BOOTSTRAP PERSONALIZADAS
+// ================================================
+body {
+    background-image: url('../img/resto/brown-1562019.png');
+    background-size: cover; /* ocupa toda la pantalla */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.cantante {
+    font-size: 2.0rem;
+    color: $secondary;
+}
