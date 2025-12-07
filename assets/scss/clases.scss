@@ -3,7 +3,8 @@
 // ================================================
 body {
     background-image: url('../img/resto/brown-1562019.png');
-    background-size: cover; /* ocupa toda la pantalla */
+    background-size: cover;
+    /* ocupa toda la pantalla */
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -11,4 +12,69 @@ body {
 .cantante {
     font-size: 2.0rem;
     color: $secondary;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.cantante:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+.entrada{
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.entrada:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+.animar-titulo {
+    opacity: 0;
+    transform: translateX(-1500px);
+    animation: aparecer 1.0s ease-out forwards;
+}
+
+@keyframes aparecer {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animar-carrusel {
+    opacity: 0;
+    transform: translateX(1500px);
+    animation: aparecer 1.0s ease-out forwards;
+}
+
+.animar-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+}
+
+.animar-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*Animacion de las entradas*/
+
+.anim-left, .anim-right {
+    opacity: 0;
+    transition: all 0.8s ease-out;
+}
+
+.anim-left {
+    transform: translateX(-100px);
+}
+
+.anim-right {
+    transform: translateX(100px);
+}
+
+.visible {
+    opacity: 1;
+    transform: translateX(0);
 }

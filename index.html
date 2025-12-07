@@ -11,10 +11,10 @@
     <link href="assets/css/custom-min.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="pt-5">
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg bg-dark">
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="#">
                 <img src="assets/img/logos/logo-removebg-preview.png" alt="logo" width="90" class="me-2">
@@ -25,7 +25,7 @@
 
             <div id="navMenu" class="collapse navbar-collapse">
                 <ul class="navbar-nav mx-auto gap-3">
-                    <li class="nav-item"><a class="nav-link link-secondary" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link link-secondary" href="#">Home</a></li>
                     <li class="nav-item"><a class="nav-link link-secondary" href="#artistas">Artistas</a></li>
                     <li class="nav-item"><a class="nav-link link-secondary" href="#entradas">Entradas</a></li>
                     <li class="nav-item"><a class="nav-link link-secondary" href="#horario">Horario</a></li>
@@ -34,21 +34,34 @@
                 </ul>
 
                 <div class="d-flex gap-2 flex-md-column flex-xl-row">
-                    <button class="btn btn-outline-secondary">Iniciar sesión</button>
-                    <button class="btn btn-outline-secondary">Usuario</button>
+                    <button class="btn btn-outline-secondary" data-bs-toggle="modal"
+                        data-bs-target="#inicioSesion">Iniciar sesión</button>
+                    <div class="btn-group">
+                        <button class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false">Usuario</button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Mis datos</a></li>
+                            <li><a class="dropdown-item" href="#">Mis entradas</a></li>
+                            <li><a class="dropdown-item" href="#">Configuración</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </nav>
 
     <!-- HERO -->
-    <section id="home" class="py-5 text-center container-fluid">
-        <h2 class="text-primary"><img class="img-fluid pb-4" style="width: 350px;"
+    <section id="home" class="mt-5 py-5 text-center container-fluid">
+        <h2 class="text-primary"><img class="img-fluid pb-4 animar-titulo" tabindex="1" style="width: 350px;"
                 src="assets/img/logos/Logo(solo letras recortado).png" alt=""></h2>
 
         <!--<img src="assets/img/resto/Imagen principal.png" alt="Imagen principal del evento"
             class="img-fluid rounded border mx-auto"> -->
-        <div id="carouselExampleIndicators" class="carousel slide">
+        <div id="carouselExampleIndicators" class="carousel slide animar-carrusel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -86,63 +99,67 @@
         <h3 class="text-primary">Artistas invitados</h3>
 
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 my-3">
-            <div class="col">
-                <div class="card p-2" data-bs-toggle="modal" data-bs-target="#aitana">
+            <div class="col animar-scroll">
+                <div class="card p-2 cantante" data-bs-toggle="modal" data-bs-target="#aitana">
                     <img src="assets/img/cantantes/aitana500.png" class="img-fluid" alt="">
-                    <strong class="cantante">Aitana</strong>
+                    <strong>Aitana</strong>
                 </div>
             </div>
 
-            <div class="col">
-                <div class="card p-2" data-bs-toggle="modal" data-bs-target="#badbunnyModal">
+            <div class="col animar-scroll">
+                <div class="card p-2 cantante" data-bs-toggle="modal" data-bs-target="#badbunnyModal">
                     <img src="assets/img/cantantes/Bad-Bunny500.png" class="img-fluid" alt="">
-                    <strong class="cantante">Bad Bunny</strong>
+                    <strong>Bad Bunny</strong>
                 </div>
             </div>
 
-            <div class="col">
-                <div class="card p-2" data-bs-toggle="modal" data-bs-target="#becerraModal">
+            <div class="col animar-scroll">
+                <div class="card p-2 cantante" data-bs-toggle="modal" data-bs-target="#becerraModal">
                     <img src="assets/img/cantantes/mariabecerra500.jpg" class="img-fluid" alt="">
-                    <strong class="cantante">María Becerra</strong>
+                    <strong>María Becerra</strong>
                 </div>
             </div>
 
-            <div class="col">
-                <div class="card p-2" data-bs-toggle="modal" data-bs-target="#brunoModal">
+            <div class="col animar-scroll">
+                <div class="card p-2 cantante" data-bs-toggle="modal" data-bs-target="#brunoModal">
                     <img src="assets/img/cantantes/brunoMars500.jpg" class="img-fluid" alt="">
-                    <strong class="cantante">Bruno Mars</strong>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card p-2" data-bs-toggle="modal" data-bs-target="#chayanneModal">
-                    <img src="assets/img/cantantes/chayanne500.jpg" class="img-fluid" alt="">
-                    <strong class="cantante">Chayanne</strong>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card p-2" data-bs-toggle="modal" data-bs-target="#rosaliaModal">
-                    <img src="assets/img/cantantes/rosalia500.jpg" class="img-fluid" alt="">
-                    <strong class="cantante">Rosalía</strong>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card p-2" data-bs-toggle="modal" data-bs-target="#bisbalModal">
-                    <img src="assets/img/cantantes/davidBisbal500.jpg" class="img-fluid" alt="">
-                    <strong class="cantante">David Bisbal</strong>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card p-2" data-bs-toggle="modal" data-bs-target="#sabrinaModal">
-                    <img src="assets/img/cantantes/sabrina500.jpg" class="img-fluid" alt="">
-                    <strong class="cantante">S. Carpenter</strong>
+                    <strong>Bruno Mars</strong>
                 </div>
             </div>
         </div>
-        <button class="btn btn-secondary">Ver más</button>
+
+        <!-- Cantantes ocultos -->
+        <div class="collapse row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 my-3" id="collapseArtistas">
+            <div class="col">
+                <div class="card p-2 cantante" data-bs-toggle="modal" data-bs-target="#chayanneModal">
+                    <img src="assets/img/cantantes/chayanne500.jpg" class="img-fluid" alt="">
+                    <strong>Chayanne</strong>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card p-2 cantante" data-bs-toggle="modal" data-bs-target="#rosaliaModal">
+                    <img src="assets/img/cantantes/rosalia500.jpg" class="img-fluid" alt="">
+                    <strong>Rosalía</strong>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card p-2 cantante" data-bs-toggle="modal" data-bs-target="#bisbalModal">
+                    <img src="assets/img/cantantes/davidBisbal500.jpg" class="img-fluid" alt="">
+                    <strong>David Bisbal</strong>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card p-2 cantante" data-bs-toggle="modal" data-bs-target="#sabrinaModal">
+                    <img src="assets/img/cantantes/sabrina500.jpg" class="img-fluid" alt="">
+                    <strong>S. Carpenter</strong>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseArtistas">Ver
+            más</button>
     </section>
 
     <!-- ENTRADAS -->
@@ -150,21 +167,21 @@
         <h3 class="text-center mb-4 text-primary">Entradas</h3>
 
         <div class="row g-4">
-            <div class="col-md-5 col-lg-5">
-                <div class="card p-3 text-center">
+            <div class="col-md-5 col-lg-5 anim-left">
+                <div class="card entrada p-3 text-center">
                     <img src="assets/img/tickets/NormalTicket.png" class="img-fluid" alt="">
                     <h4 class="mt-4">Entrada Normal</h4>
                     <p class="text-muted">Incluye acceso general al recinto.</p>
-                    <a class="btn btn-secondary" href="#">Comprar</a>
+                    <a class="btn btn-secondary">Comprar</a>
                 </div>
             </div>
 
-            <div class="col-md-5 offset-md-2 col-lg-5 offset-lg-2">
-                <div class="card p-3 text-center">
+            <div class="col-md-5 offset-md-2 col-lg-5 offset-lg-2 anim-right">
+                <div class="card entrada p-3 text-center">
                     <img src="assets/img/tickets/GoldenTicket(modificado).png" class="img-fluid" alt="">
                     <h4 class="mt-4">Entrada Premium</h4>
                     <p class="text-muted mt-1">Acceso VIP y acceso anticipado.</p>
-                    <a class="btn btn-secondary" href="#">Comprar</a>
+                    <a class="btn btn-secondary">Comprar</a>
                 </div>
             </div>
         </div>
@@ -177,7 +194,7 @@
     <section id="horario" class="container py-5">
         <h3 class="text-center mb-4 text-primary">Horario</h3>
 
-        <div class="card p-4 bg-secondary bg-opacity-10">
+        <div class="card p-4 bg-secondary bg-opacity-10 col-lg-5 mx-auto">
             <div class="table-responsive">
                 <table class="table table-bordered text-center table-hover mb-0 ">
                     <thead class="table-secondary table-hover">
@@ -243,18 +260,25 @@
                 mientras que la entrada VIP incluye áreas exclusivas, mejores vistas del escenario, zonas privadas y
                 servicios premium.</p>
         </div>
-        <div class="mb-3">
-            <h5 class="text-secondary">¿Puedo entrar y salir del recinto durante el festival?</h5>
-            <p class="text-light">Por motivos de seguridad, las entradas solo permiten una entrada al recinto por día.
-                No se permite volver a entrar una vez que hayas salido.</p>
-        </div>
+        <!-- Preguntas ocultas -->
+        <div class="collapse" id="collapseFAQs">
+            <div class="mb-3">
+                <h5 class="text-secondary">¿Puedo entrar y salir del recinto durante el festival?</h5>
+                <p class="text-light">Por motivos de seguridad, las entradas solo permiten una entrada al recinto por
+                    día.
+                    No se permite volver a entrar una vez que hayas salido.</p>
+            </div>
 
-        <div class="mb-3">
-            <h5 class="text-secondary">¿Hay opciones de comida, bebida y descanso dentro del festival?</h5>
-            <p class="text-light">Sí, contamos con una amplia zona gastronómica con food trucks, barras de bebidas y
-                áreas de descanso para que disfrutes entre concierto y concierto.</p>
+            <div class="mb-3">
+                <h5 class="text-secondary">¿Hay opciones de comida, bebida y descanso dentro del festival?</h5>
+                <p class="text-light">Sí, contamos con una amplia zona gastronómica con food trucks, barras de bebidas y
+                    áreas de descanso para que disfrutes entre concierto y concierto.</p>
+            </div>
         </div>
-
+        <div class="text-center">
+            <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFAQs">Ver
+                más</button>
+        </div>
     </section>
     <section>
         <h3 id="consejos" class="text-center mb-4 text-primary">Consejos para el festival</h3>
@@ -390,9 +414,12 @@
                     <p>Cantante y compositora española que se dio a conocer tras participar en un talent show
                         televisivo. Ha logrado reconocimiento internacional gracias a su pop moderno y colaboraciones
                         con artistas de distintos géneros.</p>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                        aria-label="Close">Salir</button>
                 </div>
             </div>
         </div>
+
     </div>
 
     <!-- Bad Bunny -->
@@ -404,6 +431,8 @@
                     <h3>Bad Bunny</h3>
                     <p>Cantante y compositor puertorriqueño, referente del trap latino y reguetón. Se ha destacado por
                         su estilo particular, su impacto cultural y su constante experimentación musical.</p>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                        aria-label="Close">Salir</button>
                 </div>
             </div>
         </div>
@@ -418,6 +447,8 @@
                     <h3>María Becerra</h3>
                     <p>Cantante argentina enfocada en el pop urbano. Ha alcanzado gran popularidad en la escena latina
                         actual gracias a su versatilidad vocal y colaboraciones con artistas de gran trayectoria.</p>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                        aria-label="Close">Salir</button>
                 </div>
             </div>
         </div>
@@ -432,6 +463,8 @@
                     <h3>Bruno Mars</h3>
                     <p>Cantante, compositor y productor estadounidense reconocido mundialmente. Su estilo fusiona pop,
                         funk, soul y R&B, logrando múltiples éxitos y premios.</p>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                        aria-label="Close">Salir</button>
                 </div>
             </div>
         </div>
@@ -446,6 +479,8 @@
                     <h3>Chayanne</h3>
                     <p>Cantante y actor puertorriqueño con una trayectoria consolidada en la música latina. Conocido por
                         sus baladas y temas pop que han marcado varias generaciones.</p>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                        aria-label="Close">Salir</button>
                 </div>
             </div>
         </div>
@@ -460,6 +495,8 @@
                     <h3>Rosalía</h3>
                     <p>Cantante, compositora y productora española cuya propuesta mezcla flamenco con pop, urbano y
                         electrónica. Se ha convertido en una artista global con un estilo muy distintivo.</p>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                        aria-label="Close">Salir</button>
                 </div>
             </div>
         </div>
@@ -474,6 +511,8 @@
                     <h3>David Bisbal</h3>
                     <p>Cantante español con larga trayectoria internacional. Reconocido por su voz potente, su energía
                         escénica y éxitos dentro del pop latino.</p>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                        aria-label="Close">Salir</button>
                 </div>
             </div>
         </div>
@@ -488,13 +527,88 @@
                     <h3>Sabrina Carpenter</h3>
                     <p>Cantante y actriz estadounidense. Su carrera musical ha crecido notablemente en los últimos años
                         con un estilo pop moderno y presencia destacada en redes sociales.</p>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                        aria-label="Close">Salir</button>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Modal Inicio sesion-->
+    <div class="modal fade" id="inicioSesion" tabindex="-1">
+        <form>
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Iniciar sesión</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
 
+                        <div class="form-group">
+                            <label class="m-1" for="email">Correo electrónico</label>
+                            <input type="email" class="form-control m-1" id="email" placeholder="Ingresa tu correo"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label class="m-1" for="password">Contraseña</label>
+                            <input type="password" class="form-control m-1" id="password"
+                                placeholder="Ingresa tu contraseña" required>
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input m-1" id="remember">
+                            <label class="form-check-label m-1" for="remember">Recordarme</label>
+                        </div>
+                        <p>¿No estas registrado? <a class="link-primary">Registrarme</a></p>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Salir</button>
+                        <button type="submit" class="btn btn-primary">Ingresar</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script para animaciones al hacer scroll -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const elementos = document.querySelectorAll(".animar-scroll");
+
+            const observador = new IntersectionObserver((entradas) => {
+                entradas.forEach((entrada) => {
+                    if (entrada.isIntersecting) {
+                        entrada.target.classList.add("visible");
+                        // Para que la animación no se repita al hacer scroll hacia arriba:
+                        observador.unobserve(entrada.target);
+                    }
+                });
+            }, {
+                threshold: 0.2 // visible al 20%
+            });
+
+            elementos.forEach((el) => observador.observe(el));
+        });
+        /*Script para animar las entradas*/
+        document.addEventListener("DOMContentLoaded", () => {
+            const left = document.querySelector(".anim-left");
+            const right = document.querySelector(".anim-right");
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        left.classList.add("visible");
+                        right.classList.add("visible");
+                        observer.disconnect(); // Evita que se repita
+                    }
+                });
+            });
+
+            observer.observe(left);
+            observer.observe(right);
+        });
+    </script>
 </body>
 
 </html>
