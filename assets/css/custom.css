@@ -12224,6 +12224,12 @@ body {
   transform: translateX(0);
 }
 
+/* Cambiar color de iconos en pantallas pequeñas */
+@media (max-width: 991px) {
+  .icono-responsivo {
+    color: #BF0A8F;
+  }
+}
 .fa-solid,
 .fa-regular,
 .fa-brands,

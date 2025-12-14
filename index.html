@@ -25,12 +25,12 @@
 
             <div id="navMenu" class="collapse navbar-collapse">
                 <ul class="navbar-nav mx-auto gap-3">
-                    <li class="nav-item"><a class="nav-link link-secondary" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link link-secondary" href="#artistas">Artistas</a></li>
-                    <li class="nav-item"><a class="nav-link link-secondary" href="#entradas">Entradas</a></li>
-                    <li class="nav-item"><a class="nav-link link-secondary" href="#horario">Horario</a></li>
-                    <li class="nav-item"><a class="nav-link link-secondary" href="#faq">Faqs</a></li>
-                    <li class="nav-item"><a class="nav-link link-secondary" href="#consejos">Consejos</a></li>
+                    <li class="nav-item"><a class="nav-link link-secondary text-center" href="#"><i class="fa-solid fa-house icono-responsivo"></i> Home</a></li>
+                    <li class="nav-item"><a class="nav-link link-secondary text-center" href="#artistas"><i class="fa-solid fa-music icono-responsivo"></i>Artistas</a></li>
+                    <li class="nav-item"><a class="nav-link link-secondary text-center" href="#entradas"><i class="fa-sharp fa-solid fa-ticket icono-responsivo"></i> Entradas</a></li>
+                    <li class="nav-item"><a class="nav-link link-secondary text-center" href="#horario"><i class="fa-solid fa-calendar icono-responsivo"></i> Horario</a></li>
+                    <li class="nav-item"><a class="nav-link link-secondary text-center" href="#faq"><i class="fa-solid fa-circle-question icono-responsivo"></i> Faqs</a></li>
+                    <li class="nav-item"><a class="nav-link link-secondary text-center" href="#consejos"><i class="fa-solid fa-star icono-responsivo"></i> Consejos</a></li>
                 </ul>
 
                 <div class="d-flex gap-2 flex-md-column flex-xl-row">
@@ -101,31 +101,87 @@
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 my-3">
             <div class="col animar-scroll">
                 <div class="card p-2 cantante" data-bs-toggle="modal" data-bs-target="#aitana">
-                    <img src="assets/img/cantantes/aitana500.png" class="img-fluid" alt="">
-                    <strong>Aitana</strong>
+                    <figure>
+                        <picture>
+                            <!-- MÓVIL -->
+                            <source srcset="assets/img/cantantes/aitana250.png" media="(max-width: 576px)">
+
+                            <!-- ESCRITORIO -->
+                            <source srcset="assets/img/cantantes/aitana500.png" media="(min-width: 577px)">
+
+                            <!-- Respaldo -->
+                            <img src="assets/img/cantantes/aitana500.png" class="img-fluid" alt="Aitana">
+                        </picture>
+
+                        <figcaption class="text-center fw-bold mt-2">
+                            Aitana
+                        </figcaption>
+                    </figure>
                 </div>
             </div>
+
 
             <div class="col animar-scroll">
                 <div class="card p-2 cantante" data-bs-toggle="modal" data-bs-target="#badbunnyModal">
-                    <img src="assets/img/cantantes/Bad-Bunny500.png" class="img-fluid" alt="">
-                    <strong>Bad Bunny</strong>
+                    <figure>
+                        <picture>
+                            <!-- MÓVIL -->
+                            <source srcset="assets/img/cantantes/Bad-Bunny250.png" media="(max-width: 576px)">
+
+                            <!-- ESCRITORIO -->
+                            <source srcset="assets/img/cantantes/Bad-Bunny500.png" media="(min-width: 577px)">
+
+                            <!-- Respaldo -->
+                            <img src="assets/img/cantantes/Bad-Bunny500.png" class="img-fluid" alt="Bad Bunny">
+                        </picture>
+
+                        <figcaption class="text-center fw-bold mt-2">
+                            Bad Bunny
+                        </figcaption>
+                    </figure>
                 </div>
             </div>
 
+
             <div class="col animar-scroll">
                 <div class="card p-2 cantante" data-bs-toggle="modal" data-bs-target="#becerraModal">
-                    <img src="assets/img/cantantes/mariabecerra500.jpg" class="img-fluid" alt="">
-                    <strong>María Becerra</strong>
+                    <figure>
+                        <picture>
+                            <!-- MÓVIL -->
+                            <source srcset="assets/img/cantantes/mariabecerra250.jpg" media="(max-width: 576px)">
+
+                            <!-- ESCRITORIO -->
+                            <source srcset="assets/img/cantantes/mariabecerra500.jpg" media="(min-width: 577px)">
+
+                            <!-- Respaldo -->
+                            <img src="assets/img/cantantes/mariabecerra500.jpg" class="img-fluid" alt="Bad Bunny">
+                        </picture>
+                        <figcaption class="text-center fw-bold mt-2">María Becerra</figcaption>
+                    </figure>
                 </div>
             </div>
 
             <div class="col animar-scroll">
                 <div class="card p-2 cantante" data-bs-toggle="modal" data-bs-target="#brunoModal">
-                    <img src="assets/img/cantantes/brunoMars500.jpg" class="img-fluid" alt="">
-                    <strong>Bruno Mars</strong>
+                    <figure>
+                        <picture>
+                            <!-- MÓVIL -->
+                            <source srcset="assets/img/cantantes/brunoMars250.jpg" media="(max-width: 576px)">
+
+                            <!-- ESCRITORIO -->
+                            <source srcset="assets/img/cantantes/brunoMars500.jpg" media="(min-width: 577px)">
+
+                            <!-- Respaldo -->
+                            <img src="assets/img/cantantes/brunoMars500.jpg" class="img-fluid" alt="Bruno Mars">
+                        </picture>
+
+                        <figcaption class="text-center fw-bold mt-2">
+                            Bruno Mars
+                        </figcaption>
+                    </figure>
                 </div>
             </div>
+
         </div>
 
         <!-- Cantantes ocultos -->
@@ -362,7 +418,7 @@
                 </div>
 
                 <div class="col-md-4 text-center order-1 order-md-1">
-                    <strong class="text-light">Nombre del festival</strong>
+                    <strong class="text-light">Pamplona Music Festival</strong>
                     <div class="d-flex justify-content-center gap-2 my-2">
                         <i class="fa-brands fa-square-facebook fa-2x link-primary"></i>
                         <i class="fa-brands fa-square-instagram fa-2x link-primary"></i>
